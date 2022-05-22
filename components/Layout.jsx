@@ -6,7 +6,7 @@ import Footer from './Footer';
 const Layout = ({ children }) => ( /* children prop is equal to whatever we pass into the Layout component whenever we call it */
   <>
     <Head>
-      <title>Real Estate</title>
+      <title>ApartMeant</title>
     </Head>
     <Box maxWidth='1280px' m='auto'>
       <header>
