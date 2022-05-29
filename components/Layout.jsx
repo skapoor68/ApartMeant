@@ -7,7 +7,7 @@ const Layout = ({ children }) => ( /* children prop is equal to whatever we pass
   <>
     <Head>
       <title> { /* tab title */}
-        ApartMeant
+        Proper/ty
       </title>
     </Head>
     <Box maxWidth='1280px' m='auto'>

@@ -1,20 +1,20 @@
 import Link from "next/link";
-import {  Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer } from '@chakra-ui/react';
-import { FcMenu, FcHome, FcAbout } from 'react-icons/fc';
+import { Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer } from '@chakra-ui/react';
+import { FcMenu, FcHome } from 'react-icons/fc';
+import { FaSearchDollar } from 'react-icons/fa';
+import { HiMenu } from 'react-icons/hi';
+import { GiHouseKeys } from 'react-icons/gi';
 import { BsSearch } from 'react-icons/bs';
-import { FiKey } from 'react-icons/fi';
 
 const Navbar = () => (
-  <Flex p='2' borderBottom='1px' borderColor='gray.200'>
-    <Box color='blue.400' fontSize='3xl' fontWeight='bold'>
-      <Link href='/' paddingLeft='2'>
-          ApartMeant
-      </Link>
+  <Flex p='2' borderBottom='1px' borderColor='gray.100'>
+    <Box fontSize='4xl' color='blue.400' fontWeight='700'>
+      <Link href='/' paddingLeft='2'>Proper.ty</Link>
     </Box>
     <Spacer />
       <Box>
       <Menu>
-        <MenuButton as={IconButton} icon={<FcMenu />} variant='outlined' color='red.400' />
+        <MenuButton as={IconButton} icon={<HiMenu />} variant='outlined' colorScheme='black'/>
         <MenuList>
           <Link href='/' passHref>
             <MenuItem icon={<FcHome />}>Home</MenuItem>
@@ -23,10 +23,10 @@ const Navbar = () => (
             <MenuItem icon={<BsSearch />}>Seach</MenuItem>
           </Link>
           <Link href='/search?purpose=for-sale' passHref>
-            <MenuItem icon={<FcAbout />}>Buy property</MenuItem>
+            <MenuItem icon={<FaSearchDollar />}>Buy a property</MenuItem>
           </Link>
           <Link href='/search?purpose=for-rent' passHref>
-            <MenuItem icon={<FiKey />}>Rent property</MenuItem>
+            <MenuItem icon={<GiHouseKeys />}>Rent a property</MenuItem>
           </Link>
         </MenuList>
       </Menu>
@@ -35,3 +35,4 @@ const Navbar = () => (
 );
 
 export default Navbar;
+<Link href='/' paddingLeft='2'></Link>
