@@ -2,11 +2,13 @@ import { Box, Flex, Spacer, Text, Avatar } from '@chakra-ui/react';
 import { FaBed, FaBath } from 'react-icons/fa';
 import { BsGridFill } from 'react-icons/bs';
 import { GoVerified } from 'react-icons/go';
+import { BsRulers } from 'react-icons/bs';
 import millify from 'millify';
 
 import { baseUrl, fetchApi } from '../../utils/fetchApi';
 import ImageScrollbar from '../../components/ImageScrollbar';
 import GeoMap from '../../components/GeoMap';
+
 
 const PropertyDetails = ({ propertyDetails: 
   { 
@@ -22,14 +24,14 @@ const PropertyDetails = ({ propertyDetails:
         <Flex alignItems='center'>
           <Box paddingRight='3' color='green.400'>{isVerified && <GoVerified />}
           </Box>
-          <Text fontWeight='bold' font-size='lg'>AED {millify(price)} {rentFrequency && `/ ${rentFrequency}`}</Text>
+          <Text fontWeight='bold' font-size='lg'>{millify(price)} AED {rentFrequency && `${rentFrequency}`}</Text>
         </Flex>
         <Box>
-          <Avatar size='md' src={agency?.logo?.url} />
+          <Avatar size='lg' src={agency?.logo?.url} />
         </Box>
       </Flex>
-      <Flex alignItems='center' p='1' justifyContent='space-between' w='250px' color='blue.400'>
-        {rooms} <FaBed /> | {baths} <FaBath /> | {millify(area)} square feet <BsGridFill />
+      <Flex alignItems='center' justifyContent='space-between' w='250px' color='blue.400'>
+        <FaBed /> {rooms} | <FaBath /> {baths} | <BsRulers /> {millify(area)} square meters 
       </Flex>
       <Box marginTop='2'>
         <Text fontSize='lg' marginBottom='2' fontWeight='bold'>
@@ -76,8 +78,8 @@ const PropertyDetails = ({ propertyDetails:
             ))}
           </Flex>
       </Box>
-      <Box p='8'>
-        <Flex alignItems='center'>
+      <Box p='10'>
+        <Flex>
           <GeoMap data={geography} />
         </Flex>
       </Box>

@@ -39,7 +39,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
         purpose="BUY A HOME"
         title1="Find, Buy, and Own Your"
         title2="Dream Home"
-        buttonText="Explore properties for purchase"
+        buttonText="Explore properties for sale"
         LinkName="/search?purpose=for-sale"
         imageUrl={CoverImageA}
       />
