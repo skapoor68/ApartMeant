@@ -8,12 +8,11 @@ import Property from '../components/Property';
 import CoverImageA from '../assets/images/CoverImageA.jpeg';
 import CoverImageB from '../assets/images/CoverImageB.jpeg';
 
-const Banner = ({ imageUrl, purpose, title1, title2, desc1, desc2, LinkName, buttonText }) => (
+const Banner = ({ imageUrl, purpose, title1, title2, LinkName, buttonText }) => (
   <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="5">
     <Box p="12">
-      <Text color="gray.500" fontSize="sm" fontWeight="medium">{purpose}</Text>
+      <Text color="gray.500" fontSize="md" fontWeight="medium">{purpose}</Text>
       <Text fontSize="4xl" fontWeight="bold">{title1}<br />{title2}</Text>
-      <Text color="gray.700" fontSize="lg" paddingBottom="3" paddingTop="3" fontWeight="bold">{desc1}<br />{desc2}</Text>
       <Button fontSize="xl">
         <Link href={LinkName}>{buttonText}</Link>
       </Button>
@@ -29,9 +28,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
         purpose="RENT A HOME"
         title1="Find Your Perfect"
         title2="Rental Home"
-        desc1="Explore Apartments, Villas, Homes"
-        desc2="and more."
-        buttonText="Explore renting"
+        buttonText="Explore properties for rent "
         LinkName="/search?purpose=for-rent"
         imageUrl={CoverImageB}
       />
@@ -42,9 +39,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
         purpose="BUY A HOME"
         title1="Find, Buy, and Own Your"
         title2="Dream Home"
-        desc1="Explore Apartments, Villas, Homes"
-        desc2="and more."
-        buttonText="Explore renting"
+        buttonText="Explore properties for purchase"
         LinkName="/search?purpose=for-sale"
         imageUrl={CoverImageA}
       />
@@ -56,8 +51,8 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
 }
 
 export async function getStaticProps() {
-  const propertyForSale = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=6`)
-  const propertyForRent = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=6`)
+  const propertyForSale = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=8`)
+  const propertyForRent = await fetchApi(`${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=8`)
 
   return {
     props: {
