@@ -42,23 +42,23 @@ const PropertyDetails = ({ propertyDetails:
         </Text>
       </Box>
       <Flex flexWrap='wrap' textTransform='uppercase' justifyContent='space-between'>
-        <Flex justifyContent='space-between' w='400px' borderBottom='1px' borderColor='gray.200' p='3'>
+        <Flex justifyContent='space-between' w='400px' borderBottom='1px' borderColor='gray.200' p='5'>
           <Text>Type</Text>
           <Text fontWeight='bold'>{type}</Text>
         </Flex>
-        <Flex justifyContent='space-between' w='400px' borderBottom='1px' borderColor='gray.200' p='3'>
+        <Flex justifyContent='space-between' w='400px' borderBottom='1px' borderColor='gray.200' p='5'>
           <Text>Purpose</Text>
           <Text fontWeight='bold'>{purpose}</Text>
         </Flex>
         {furnishingStatus && (
-          <Flex justifyContent='space-between' w='400px' borderBottom='1px' borderColor='gray.200' p='3'>
+          <Flex justifyContent='space-between' w='400px' borderBottom='1px' borderColor='gray.200' p='5'>
             <Text>Furnishing status</Text>
             <Text fontWeight='bold'>{furnishingStatus}</Text>
           </Flex>
         )}
       </Flex>
       <Box>
-        {amenities.length && <Text fontSize='2xl' fontWeight='black' marginTop='8'>Amenities</Text>}
+        {amenities.length && <Text fontSize='2xl' fontWeight='bold' marginTop='8'>Amenities</Text>}
           <Flex flexWrap='wrap'>
             {amenities.map((item) => (
               item.amenities.map((amenity) => (

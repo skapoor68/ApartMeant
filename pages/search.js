@@ -27,12 +27,12 @@ const Search = ({ properties }) => {
         alignItems='center'
         onClick={() => setSearchFilters((prevFilters) => !prevFilters)}
       >
-        <Text>Search Properties by Filter</Text>
-        <Icon paddingLeft='2' w='7' as={BsFilter}></Icon>
+        <Text>Filter Properties</Text>
+        <Icon paddingLeft='2' w='8' color='blue.400' as={BsFilter}></Icon>
       </Flex>
       {searchFilters && <SearchFilters />}
-      <Text fontSize='2xl' p='4' fontWeight='bold'>
-        Properties {router.query.purpose}
+      <Text fontSize='3xl' p='4' fontWeight='bold'>
+        Results
       </Text>
       <Flex flexWrap='wrap'>
         {properties.map((property) => <Property property={property} key={property.id} />)}

@@ -20,7 +20,7 @@ const GeoMap = ({ data }) => {
       mapStyle="mapbox://styles/mapbox/streets-v9"
       mapboxAccessToken={MAPBOX_TOKEN}
     >
-      <Marker latitude={data.lat} longitude={data.lng} color="blue" />
+      <Marker latitude={data.lat} longitude={data.lng} color='blue' />
       <NavigationControl />
     </Map>
   );
