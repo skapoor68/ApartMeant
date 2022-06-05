@@ -1,4 +1,4 @@
-This is a Dubai real estate web application done with Next.js. Includes property details and description, an image carousel, search filter functionality, and a map component. Front end done mainly with Chakra UI, along with a few other libraries that can be found . Data fetched from [Bayut API]([url](https://rapidapi.com/apidojo/api/bayut)) and [Mapbox GL JS API]([url](https://docs.mapbox.com/mapbox-gl-js/api/)).  
+This is a Dubai real estate web application done with Next.js. Includes property details and description, an image carousel, search filter functionality, and a map component. Front end done primarily with Chakra UI (along with a couple other libraries that can be found in the package.json file. Property data fetched from [Bayut API]([url](https://rapidapi.com/apidojo/api/bayut)) and map data from [Mapbox GL JS API]([url](https://docs.mapbox.com/mapbox-gl-js/api/)).  
 
 ## Getting Started
 
