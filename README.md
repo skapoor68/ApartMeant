@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a Dubai real estate web application done with Next.js. Includes property details and description, an image carousel, search filter functionality, and a map component. Front end done mainly with Chakra UI, along with a few other libraries that can be found . Data fetched from [Bayut API]([url](https://rapidapi.com/apidojo/api/bayut)) and [Mapbox GL JS API]([url](https://docs.mapbox.com/mapbox-gl-js/api/)).  
 
 ## Getting Started
 
