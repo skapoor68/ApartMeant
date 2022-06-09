@@ -4,7 +4,8 @@ import NProgress from 'nprogress';
 import { ChakraProvider } from '@chakra-ui/react';
 
 import Layout from '../components/Layout';
-import nprogress from 'nprogress';
+
+import { UserProvider } from '@auth0/nextjs-auth0';
 
 function MyApp({ Component, pageProps }) {
   NProgress.configure({ showSpinner: false })
