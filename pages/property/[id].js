@@ -37,7 +37,10 @@ const PropertyDetails = ({ propertyDetails:
           {title}
         </Text>
         <Text lineHeight='2' color='gray.600'>
-          {description}
+          {description.replaceAll('<b>', '')    // clean up descriptions 
+                      .replaceAll('</b>', '')
+                      .replaceAll('<i>', '')
+                      .replaceAll('</i>', '')}
         </Text>
       </Box>
       <Flex flexWrap='wrap' textTransform='uppercase' justifyContent='space-between'>
