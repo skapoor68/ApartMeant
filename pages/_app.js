@@ -5,8 +5,6 @@ import { ChakraProvider } from '@chakra-ui/react';
 
 import Layout from '../components/Layout';
 
-import { UserProvider } from '@auth0/nextjs-auth0';
-
 function MyApp({ Component, pageProps }) {
   NProgress.configure({ showSpinner: false })
 
