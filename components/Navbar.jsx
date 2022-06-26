@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer } from '@chakra-ui/react';
-import { FcMenu, FcHome } from 'react-icons/fc';
+import { FcHome } from 'react-icons/fc';
 import { FaSearchDollar } from 'react-icons/fa';
 import { HiMenu } from 'react-icons/hi';
 import { GiHouseKeys } from 'react-icons/gi';
