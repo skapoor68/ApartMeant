@@ -13,7 +13,7 @@ const Banner = ({ imageUrl, purpose, title1, title2, LinkName, buttonText }) => 
     <Box p="12">
       <Text color="gray.500" fontSize="md" fontWeight="medium">{purpose}</Text>
       <Text fontSize="4xl" fontWeight="bold">{title1}<br />{title2}</Text>
-      <Button fontSize="xl">
+      <Button marginTop='2'colorScheme='blue' fontSize="xl">
         <Link href={LinkName}>{buttonText}</Link>
       </Button>
     </Box>
