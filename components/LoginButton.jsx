@@ -14,7 +14,7 @@ export default function LoginButton() {
   }
   return (
     <Box>
-      <Button p='2' marginRight='7' onClick={() => signIn()}>
+      <Button p='3' colorScheme='blue' marginRight='7' onClick={() => signIn()}>
         Sign in
       </Button>
     </Box>
