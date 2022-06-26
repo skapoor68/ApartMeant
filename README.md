@@ -5,6 +5,8 @@ This is a Dubai real estate web application done with Next.js. Includes property
 First, run the development server:
 
 ```bash
+npm start
+# followed by
 npm run dev
 # or
 yarn dev
