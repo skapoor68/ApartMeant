@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Box, Flex, Text, Avatar, Badge, Spacer } from '@chakra-ui/react';
 import { FaBed, FaBath } from 'react-icons/fa';
-import { BsGridFill } from 'react-icons/bs';
 import { GoVerified } from 'react-icons/go';
 import millify from 'millify';
 import { BsRulers } from 'react-icons/bs';
@@ -12,7 +11,7 @@ import DefaultImage from '../assets/images/house.png';
 const Property = ({ property: 
   { coverPhoto, price, rentFrequency, rooms, title,
     baths, area, agency, isVerified, externalID }
-}) => (
+  }) => (
   <Link href={`/property/${externalID}`} passHref>
     <Flex flexWrap='wrap' width='420px' p='5' paddingTop='0' justifyContent='flex-start' cursor='pointer'>
       <Box p="5" boxShadow='lg' maxW="500px" borderWidth="1px" borderRadius='15'>

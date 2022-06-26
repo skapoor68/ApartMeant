@@ -1,5 +1,5 @@
 import { getProviders, signIn } from "next-auth/react"
-import {Box, Button, VStack, Text, Spacer } from '@chakra-ui/react'
+import { Box, Button, VStack } from '@chakra-ui/react'
 import { BsGithub, BsGoogle, BsLinkedin } from 'react-icons/bs'
 
 export default function SignIn({ providers }) {

@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Flex, Select, Box, Text, Input, Spinner, Icon, Button, filter } from '@chakra-ui/react';
+import { useState } from 'react';
+import { Flex, Select, Box } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 
 import { filterData, getFilterValues } from '../utils/filterData';
