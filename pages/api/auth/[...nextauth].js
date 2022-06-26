@@ -4,7 +4,6 @@ import GoogleProvider from "next-auth/providers/google"
 import LinkedInProvider from "next-auth/providers/linkedin"
 
 export default NextAuth({
-  // Configure one or more authentication providers
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_CLIENT_ID,
