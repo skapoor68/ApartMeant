@@ -42,7 +42,7 @@ const PropertyDetails = ({ propertyDetails:
                       .replaceAll('<i>', '')
                       .replaceAll('</i>', '')
                       .replaceAll('<p>', '')
-                      .replaceAll('</p>, '')
+                      .replaceAll('</p>', '')
           }
         </Text>
       </Box>
