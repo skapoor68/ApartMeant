@@ -43,6 +43,10 @@ const PropertyDetails = ({ propertyDetails:
                       .replaceAll('</i>', '')
                       .replaceAll('<p>', '')
                       .replaceAll('</p>', '')
+                      .replaceAll('<li>', '')
+                      .replaceAll('</li>', '')
+                      .replaceAll('<ul>', '')
+                      .replaceAll('</ul>', '')
           }
         </Text>
       </Box>
